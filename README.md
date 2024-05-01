@@ -1,5 +1,5 @@
 # Quiz-game
-- [Project]<br>
+- _________________________________________________________Project<br>__________________________________________________________________________
 This Python script is a simple quiz game where users are presented with multiple-choice questions and prompted to select the correct answers. 
 The script uses a dictionary to store the questions as keys and their corresponding correct answers as values.
 
