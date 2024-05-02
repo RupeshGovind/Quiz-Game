@@ -11,7 +11,6 @@ def run_quiz(questions):
             print("Incorrect!")
     print("Quiz complete! You scored {}/{}.".format(score, len(questions)))
 
-# Example questions and answers
 quiz_questions = {
 
     "What color is the sky during the day?\nA: Red       B: Pink\nC: Yellow    D: Blue": "D",
