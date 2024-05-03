@@ -1,23 +1,27 @@
 print("Choose options using both uppercase and lowercase letters:")
 def run_quiz(questions):
     score = 0
+    skipped_count = 0
     for question, answer in questions.items():
         print(question)
         user_answer = input("Choose the correct options: ")
         if user_answer.lower() == answer.lower():
             print("Correct!")
+            print(" ")
             score += 1
         elif user_answer == "":
-            print("plzzz type A/B/C/D OR a/b/c/d")
-            break
+            skipped_count = skipped_count+1
+            print("|--------------------------|")
+            print(f"|You Skipped {skipped_count} Questions   |")
+            print("|--------------------------|")
+            print(" ")
+            continue
         else:
             print("Incorrect!")
+            print(" ")
     print("Quiz complete! You scored {}/{}.".format(score, len(questions)))
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3aad4d6fdb0d9808cb23415ee42d3cb42314bf44
 quiz_questions = {
 
     "What color is the sky during the day?\nA: Red       B: Pink\nC: Yellow    D: Blue": "D",
@@ -31,9 +35,4 @@ quiz_questions = {
     "How many sides does a triangle have?\nA: 3         B: 4\nC: 5         D: 6": "A",
     "What is the chemical symbol for gold?\nA: Ag        B: Au\nC: Fe        D: Cu": "B"
 }
-
-
-
-
-# Run the quiz
 run_quiz(quiz_questions)
