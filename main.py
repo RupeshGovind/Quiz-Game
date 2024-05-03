@@ -14,7 +14,10 @@ def run_quiz(questions):
             print("Incorrect!")
     print("Quiz complete! You scored {}/{}.".format(score, len(questions)))
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3aad4d6fdb0d9808cb23415ee42d3cb42314bf44
 quiz_questions = {
 
     "What color is the sky during the day?\nA: Red       B: Pink\nC: Yellow    D: Blue": "D",
