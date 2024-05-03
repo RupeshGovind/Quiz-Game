@@ -7,11 +7,14 @@ def run_quiz(questions):
         if user_answer.lower() == answer.lower():
             print("Correct!")
             score += 1
+        elif user_answer == "":
+            print("plzzz type A/B/C/D OR a/b/c/d")
+            break
         else:
             print("Incorrect!")
     print("Quiz complete! You scored {}/{}.".format(score, len(questions)))
 
-# Example questions and answers
+
 quiz_questions = {
 
     "What color is the sky during the day?\nA: Red       B: Pink\nC: Yellow    D: Blue": "D",
